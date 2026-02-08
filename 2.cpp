@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 void update(int *a,int *b) {
-    // Complete this function    
+    int sum = *a + *b;
+    int diff = *a - *b;
+    if (diff < 0) diff = -diff;
+
+    *a = sum;
+    *b = diff;    
 }
 
 int main() {
